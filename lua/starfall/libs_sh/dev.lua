@@ -5,8 +5,7 @@
 SF.RegisterLibrary("dev")
 
 return function(instance)
-
-if not (instance.owner and instance.owner:IsSuperAdmin()) then return end
+if not instance.player:IsSuperAdmin() then return end
 
 local dev_library = instance.Libraries.dev
 
