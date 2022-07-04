@@ -36,3 +36,5 @@ function dev_library.setGlobal()
 
 	return oldEnv
 end
+
+end
