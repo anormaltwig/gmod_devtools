@@ -5,7 +5,7 @@
 SF.RegisterLibrary("dev")
 
 return function(instance)
-if not IsValid(instance.player) or not instance.player:IsPlayer() or not instance.player:IsSuperAdmin() then return end
+if instance.player ~= SF.Superuser and (not IsValid(instance.player) or not instance.player:IsPlayer() or not instance.player:IsSuperAdmin()) then return end
 
 local dev_library = instance.Libraries.dev
 
